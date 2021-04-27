@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -63,9 +63,10 @@
 		D30114622638720C00A12F72 /* RxGithub */ = {
 			isa = PBXGroup;
 			children = (
+				D30114792638730600A12F72 /* Model */,
+				D3011477263872F800A12F72 /* Controller */,
 				D30114632638720C00A12F72 /* AppDelegate.swift */,
 				D30114652638720C00A12F72 /* SceneDelegate.swift */,
-				D30114672638720C00A12F72 /* ViewController.swift */,
 				D30114692638720C00A12F72 /* Main.storyboard */,
 				D301146C2638720F00A12F72 /* Assets.xcassets */,
 				D301146E2638720F00A12F72 /* LaunchScreen.storyboard */,
@@ -74,13 +75,34 @@
 			path = RxGithub;
 			sourceTree = "<group>";
 		};
+		D3011477263872F800A12F72 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D30114672638720C00A12F72 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D3011478263872FE00A12F72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D30114792638730600A12F72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D5B9866EF2B455760BA76F27 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				9A7DF4E87DFBC72D2DF3F5BF /* Pods-RxGithub.debug.xcconfig */,
 				363DDE34FC80F95361BD7251 /* Pods-RxGithub.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -357,6 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RxGithub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,6 +399,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RxGithub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
