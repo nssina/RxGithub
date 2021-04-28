@@ -1,18 +1,17 @@
 //
-//  ViewController.swift
+//  SearchVC.swift
 //  RxGithub
 //
-//  Created by Sina Rabiei on 4/27/21.
+//  Created by Sina Rabiei on 4/28/21.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SearchVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
-
 }
-
