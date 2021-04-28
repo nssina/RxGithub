@@ -124,7 +124,7 @@
                                                                         <constraint firstAttribute="height" constant="30" id="ZnM-1F-vkU"/>
                                                                     </constraints>
                                                                 </stackView>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9a-hO-DSp">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9a-hO-DSp" customClass="RoundedBorderButton" customModule="RxGithub" customModuleProvider="target">
                                                                     <rect key="frame" x="127" y="286" width="97" height="70"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                     <state key="normal" title="View Readme">
@@ -179,14 +179,29 @@
                     <view key="view" contentMode="scaleToFill" id="mBC-UY-0eJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a search query" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fYp-ao-V5S" customClass="RoundedBorderTextField" customModule="RxGithub" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="u73-EA-nPF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="f4u-OS-srp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fYp-ao-V5S" firstAttribute="leading" secondItem="f4u-OS-srp" secondAttribute="leading" constant="20" id="Hcr-Yg-EJa"/>
+                            <constraint firstItem="f4u-OS-srp" firstAttribute="trailing" secondItem="fYp-ao-V5S" secondAttribute="trailing" constant="20" id="XM0-9p-sdu"/>
+                            <constraint firstItem="fYp-ao-V5S" firstAttribute="top" secondItem="f4u-OS-srp" secondAttribute="top" constant="20" id="eqR-A1-dBD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="hkq-cT-Uou"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2K-uU-1RK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1626" y="469"/>
+            <point key="canvasLocation" x="1624.8" y="468.21589205397305"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4dd-mf-Rhc">
